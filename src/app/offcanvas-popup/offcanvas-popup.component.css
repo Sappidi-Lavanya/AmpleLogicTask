@@ -1,0 +1,26 @@
+.offcanvas {
+    height: 120px;
+    bottom: 50;
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  
+  .offcanvas.show {
+    transform: translateY(0);
+  }
+  
+  .offcanvas:not(.show) {
+    transform: translateY(100%);
+  }
+  
+  .progress-bar {
+    background-color: #28a745;  
+  }
+  

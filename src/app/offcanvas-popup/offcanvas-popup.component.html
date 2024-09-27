@@ -1,0 +1,21 @@
+<div class="container">
+    <button class="btn btn-primary" (click)="startMigration()">
+      Start Migration
+    </button>
+  </div>
+  
+  
+  <div class="offcanvas offcanvas-bottom" [ngClass]="{'show': showPopup}" tabindex="-1">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Migration Progress</h5>
+      <button type="button" class="btn btn-secondary" (click)="togglePopup()">
+        Toggle
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" [style.width.%]="progress" aria-valuenow="progress" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+  
